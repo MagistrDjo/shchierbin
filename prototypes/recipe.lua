@@ -430,7 +430,7 @@ data:extend({
     allow_productivity = true
   },{
     type = "recipe",
-    name = "water-electrolysis",
+    name = "water-electrolysis-shchierbin",
 	icons = {
 			{
 				icon = "__base__/graphics/icons/fluid/water.png",
@@ -461,7 +461,7 @@ data:extend({
     {
       {type = "fluid", name = "water", amount = 9}
     },
-    energy_required = 10,
+    energy_required = 9,
     results = {{type="fluid", name="hydrogen", amount=10},{type="fluid", name="oxygen", amount=80}},
     allow_productivity = true
   },{
@@ -503,3 +503,4 @@ data:extend({
   },
   
 })
+
