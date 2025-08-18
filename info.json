@@ -4,10 +4,12 @@
     "title": "Shchierbin",
     "author": "Magistr-Djo",
     "factorio_version": "2.0",
-    "description": "Shchierbin",
+	"homepage": "https://discord.gg/Mu7zkD7THf",
+    "description": "Ščierbin",
     "dependencies": [
 	"base >= 2.0.7",
 	"space-age >= 2.0.7",
 	"? Flare Stack >= 3.0.0"
 	]
 }
+
