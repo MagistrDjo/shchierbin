@@ -383,7 +383,7 @@ unit =
     {
 	      {
         type = "unlock-recipe",
-        recipe = "water-electrolysis"
+        recipe = "water-electrolysis-shchierbin"
       },
     },
     prerequisites = {"chlorine-processing"},
@@ -506,3 +506,4 @@ unit =
     }
   }
 })
+
