@@ -1,4 +1,4 @@
-data:extend({--[[{
+data:extend({{----------------------------------------------------------------------------- petrol gas
     type = "fluid",
     name = "natural-gas",
     icon = "__shchierbin__/graphics/fluid/natural-gas.png",
@@ -16,7 +16,7 @@ data:extend({--[[{
         base_color = { r = 0.7, g = 0.7, b = 0.4 },
         flow_color = { r = 0.7, g = 0.7, b = 0.4 },
         default_temperature = 25,
-        icon = "__space-age__/graphics/icons/fluid/ammoniacal-solution.png",
+        icon = "__shchierbin__/graphics/fluid/hydrogen-sulfide.png",
 		auto_barrel = false
     },{
         type = "fluid",
@@ -25,7 +25,7 @@ data:extend({--[[{
         base_color = { r = 0.8, g = 0.8, b = 0.5 },
         flow_color = { r = 0.8, g = 0.8, b = 0.5 },
         default_temperature = 25,
-        icon = "__space-age__/graphics/icons/fluid/ammoniacal-solution.png",
+        icon = "__shchierbin__/graphics/fluid/sulfur-dioxide.png",
 		auto_barrel = false
     },{
     type = "fluid",
@@ -40,14 +40,34 @@ data:extend({--[[{
 	},{
     type = "fluid",
     name = "chloromethane",
-    icon = "__shchierbin__/graphics/fluid/methane.png",
+    icon = "__shchierbin__/graphics/fluid/chloromethane.png",
     subgroup = "fluid",
-		default_temperature = 15,
+		default_temperature = 25,
 		max_temperature = 535,
     base_color = { 0.7, 0.95, 0.7},
     flow_color = { 0.7, 0.95, 0.7},
     auto_barrel = false
-	},]]{
+	},{
+    type = "fluid",
+    name = "ethylene",
+    icon = "__shchierbin__/graphics/fluid/ethylene.png",
+    subgroup = "fluid",
+		default_temperature = 25,
+		max_temperature = 535,
+    base_color = { 0.8, 0.8, 0.8},
+    flow_color = { 0.8, 0.8, 0.8},
+    auto_barrel = false
+	},{
+    type = "fluid",
+    name = "vinylchloride",
+    icon = "__shchierbin__/graphics/fluid/vinylchloride.png",
+    subgroup = "fluid",
+		default_temperature = 25,
+		max_temperature = 535,
+    base_color = { 0.7, 0.95, 0.7},
+    flow_color = { 0.7, 0.95, 0.7},
+    auto_barrel = false
+	},{----------------------------------------------------------------------------- fluid
     type = "fluid",
     name = "sea-water",
     icon = "__shchierbin__/graphics/fluid/sea-water.png",
@@ -122,13 +142,15 @@ data:extend({--[[{
         subgroup = "fluid",
       base_color = {0.11, 0.1, 0.1},
       flow_color = {0.11, 0.1, 0.1},
-        default_temperature = 25,
+		default_temperature = 25,
+		max_temperature = 535,
 				    auto_barrel = false,
         icon = "__shchierbin__/graphics/fluid/carbon-dioxide.png"
 
     },{ 
 		type = "fluid",
         name = "maraxsis-atmosphere",
+		max_temperature=100,
         default_temperature = 25,
         base_color = {1, 1, 1},
         flow_color = {0.5, 0.5, 1},
