@@ -82,8 +82,8 @@ unit =
     name = "gas-ballon",
 	icon = "__shchierbin__/graphics/ballon/gas-ballon.png",
 	icon_size = 64,
-    subgroup = "barrel",
-    order = "d",
+    subgroup = "intermediate-product",
+    order = "ada",
 	stack_size = 50,
     weight = 2*kg,
 	auto_recycle=false,
@@ -310,7 +310,8 @@ data:extend({
 				draw_background = true,
 			},
 		},
-    enabled = false,
+    enabled = false,    
+    subgroup = "barrel", order = "db",
     ingredients ={{type="item", name="gas-ballon-N", amount=1}},
     energy_required = 1,
     results =     {
@@ -339,6 +340,7 @@ data:extend({
 			},
 		},
     enabled = false,
+    subgroup = "barrel", order = "db",
     ingredients ={{type="item", name="gas-ballon-H", amount=1}},
     energy_required = 1,
     results =     {
@@ -368,6 +370,7 @@ data:extend({
 			},
 		},
     enabled = false,
+    subgroup = "barrel", order = "db",
     ingredients ={{type="item", name="gas-ballon-O", amount=1}},  
 
     energy_required = 1,
@@ -398,6 +401,7 @@ data:extend({
 			},
 		},
     enabled = false,
+    subgroup = "barrel", order = "db",
     ingredients ={{type="item", name="gas-ballon-CO2", amount=1}},
 
     energy_required = 1,
@@ -428,6 +432,7 @@ data:extend({
 			},
 		},
     enabled = false,
+    subgroup = "barrel", order = "db",
     ingredients ={{type="item", name="gas-ballon-Cl", amount=1}},
 
     energy_required = 1,
@@ -458,6 +463,7 @@ data:extend({
 			},
 		},
     enabled = false,
+    subgroup = "barrel", order = "db",
     ingredients ={{type="item", name="gas-ballon-NH3", amount=1}},
 
     energy_required = 1,
@@ -520,6 +526,7 @@ data:extend({
 			},
 		},
     enabled = false,
+    subgroup = "barrel", order = "db",
     ingredients ={{type="item", name="gas-ballon-H2S", amount=1}},
     energy_required = 1,
     results =     {
@@ -548,6 +555,7 @@ data:extend({
 			},
 		},
     enabled = false,
+    subgroup = "barrel", order = "db",
     ingredients ={{type="item", name="gas-ballon-SO2", amount=1}},
     energy_required = 1,
     results =     {
@@ -598,6 +606,7 @@ data:extend({
 			},
 		},
     enabled = false,
+    subgroup = "barrel", order = "db",
     ingredients ={{type="item", name="gas-ballon-C2H4", amount=1}},
     energy_required = 1,
     results =     {

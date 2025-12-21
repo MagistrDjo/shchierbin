@@ -26,6 +26,7 @@ data:extend({
     type = "recipe",
     name = "calcium",
 	icon = "__shchierbin__/graphics/item/calcium.png",
+    subgroup = "shchierbin", order = "ca",
 	icon_size = 64,
     category = "chemistry",
     enabled = false,
@@ -65,7 +66,7 @@ data:extend({
 	icon = "__shchierbin__/graphics/item/vanadium-dust.png",
 	icon_size = 64,
     category = "chemistry",
-    enabled = false,
+    enabled = false, subgroup = "vanadium", order = "da",
     ingredients =
     {
       {type = "item", name = "vanadium-oxide", amount = 1},
@@ -128,6 +129,7 @@ data:extend({
 	icon_size = 64,
     category = "oil-processing",
     enabled = false,
+    subgroup = "gas-recipe", order = "a",
     ingredients =
     {
       {type = "fluid", name = "natural-gas", amount = 100}
@@ -154,6 +156,7 @@ data:extend({
 	icon_size = 64,
     category = "chemistry",
     enabled = false,
+    subgroup = "gas-recipe", order = "c",
     ingredients =
     {
       {type = "fluid", name = "chloromethane", amount = 50},{type = "fluid", name = "sodium-hydroxide", amount = 10}
@@ -234,6 +237,7 @@ data:extend({
 	icon_size = 64,
     category = "chemistry",
     enabled = false,
+    subgroup = "gas-recipe", order = "d",
     surface_conditions = {{
         property = "pressure",
         min = 10,
@@ -252,6 +256,7 @@ data:extend({
 	icon_size = 64,
     category = "chemistry",
     enabled = false,
+    subgroup = "gas-recipe", order = "e",
     surface_conditions = {{
         property = "pressure",
         min = 10,
@@ -284,6 +289,7 @@ data:extend({
 			},
 		},
     enabled = false,
+    subgroup = "shchierbin", order = "z",
     ingredients =
     {
       {type = "fluid", name = "steam", amount = 1000, temperature = 165},{type = "item", name = "vanadium-oxide-catalyst", amount = 1},{type = "fluid", name = "sulfur-dioxide", amount = 500}
@@ -324,6 +330,7 @@ data:extend({
 			},
 		},
     enabled = false,
+    subgroup = "gas-recipe", order = "f",
     ingredients =
     {
       {type = "fluid", name = "hydrogen-sulfide", amount = 200},{type = "fluid", name = "sulfur-dioxide", amount = 100}
@@ -339,7 +346,7 @@ data:extend({
     name = "salt",
 	icon = "__shchierbin__/graphics/item/salt.png",
 	icon_size = 64,
-    category = "chemistry",
+    category = "chemistry",     subgroup = "shchierbin", order = "x",
     enabled = false,
     ingredients =
     {
@@ -355,6 +362,7 @@ data:extend({
 	icon_size = 64,
     category = "chemistry",
     enabled = false,
+    subgroup = "gas-recipe", order = "b",
     ingredients =
     {
       {type = "item", name = "salt", amount = 1}
@@ -542,6 +550,7 @@ data:extend({
         {type = "fluid", name = "maraxsis-atmosphere", amount = 100}
     },
     enabled = false,
+	                                                   subgroup = "gas-recipe", order = "ab",
     main_product = "maraxsis-atmosphere",
     surface_conditions = {{
         property = "pressure",
@@ -553,7 +562,7 @@ data:extend({
 	icon = "__shchierbin__/graphics/fluid/atmosphere.png",
 	icon_size = 64,
     category = "chemistry",
-    enabled = false,
+    enabled = false,                             subgroup = "gas-recipe", order = "ab",
     ingredients =
     {
       {type = "fluid", name = "maraxsis-atmosphere", amount = 100}
@@ -589,7 +598,7 @@ data:extend({
 			},
 		},
     category = "chemistry",
-    enabled = false,
+    enabled = false, subgroup = "gas-recipe", order = "g",
     ingredients =
     {
       {type = "fluid", name = "water", amount = 100}

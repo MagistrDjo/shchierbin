@@ -13,6 +13,12 @@ data:extend({
     order = "na",
   },
   {
+    type = "item-subgroup",
+    name = "gas-recipe",
+    group = "intermediate-products",
+    order = "nc",
+  },
+  {
     type = "recipe-category",
     name = "crushing-vanad-2"
   },
