@@ -1,3 +1,17 @@
+if mods["maraxsis"] then 
+data:extend({{
+		type = "fluid",
+        name = "maraxsis-atmosphere",
+        default_temperature = 25,
+		max_temperature=100,
+        base_color = {1, 1, 1},
+        flow_color = {0.5, 0.5, 1},
+        icon = "__shchierbin__/graphics/fluid/atmosphere.png",
+        subgroup = "fluid",
+        icon_size = 64,
+		}})
+end
+
 data:extend({{----------------------------------------------------------------------------- petrol gas
     type = "fluid",
     name = "natural-gas",
@@ -147,16 +161,7 @@ data:extend({{------------------------------------------------------------------
 				    auto_barrel = false,
         icon = "__shchierbin__/graphics/fluid/carbon-dioxide.png"
 
-    },{ 
-		type = "fluid",
-        name = "maraxsis-atmosphere",
-        default_temperature = 25,
-		max_temperature=100,
-        base_color = {1, 1, 1},
-        flow_color = {0.5, 0.5, 1},
-        icon = "__shchierbin__/graphics/fluid/atmosphere.png",
-        subgroup = "fluid",
-        icon_size = 64,
-		}
+    }
 	
+
 	})
