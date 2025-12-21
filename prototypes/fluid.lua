@@ -150,6 +150,7 @@ data:extend({{------------------------------------------------------------------
     },{ 
 		type = "fluid",
         name = "maraxsis-atmosphere",
+		max_temperature=100,
         default_temperature = 25,
         base_color = {1, 1, 1},
         flow_color = {0.5, 0.5, 1},
