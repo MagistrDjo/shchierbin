@@ -167,6 +167,36 @@ data:extend({
 	stack_size = 50,
     weight = 2*kg,
 		auto_recycle=false
+  },    {
+    type = "item",
+    name = "gas-ballon-H2S",
+	icon = "__shchierbin__/graphics/ballon/ballon-H2S.png",
+	icon_size = 64,
+    subgroup = "barrel",
+    order = "d",
+	stack_size = 50,
+    weight = 2*kg,
+		auto_recycle=false
+  },    {
+    type = "item",
+    name = "gas-ballon-SO2",
+	icon = "__shchierbin__/graphics/ballon/ballon-SO2.png",
+	icon_size = 64,
+    subgroup = "barrel",
+    order = "d",
+	stack_size = 50,
+    weight = 2*kg,
+		auto_recycle=false
+  },    {
+    type = "item",
+    name = "gas-ballon-C2H4",
+	icon = "__shchierbin__/graphics/ballon/ballon-C2H4.png",
+	icon_size = 64,
+    subgroup = "barrel",
+    order = "d",
+	stack_size = 50,
+    weight = 2*kg,
+		auto_recycle=false
   },
   
 })
@@ -439,5 +469,154 @@ data:extend({
   },
 
 })
+data:extend({
 
+   {
+    type = "recipe",
+    name = "gas-ballon-H2S",
+    category = "crafting-with-fluid",auto_recycle=false,
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "gas-ballon", amount = 1},
+	  {type = "fluid", name = "hydrogen-sulfide", amount = 250},
+    },
+    energy_required = 1,
+    results = {{type="item", name="gas-ballon-H2S", amount=1}},
+    allow_productivity = true
+  },   {
+    type = "recipe",
+    name = "gas-ballon-SO2",
+    category = "crafting-with-fluid",auto_recycle=false,
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "gas-ballon", amount = 1},
+	  {type = "fluid", name = "sulfur-dioxide", amount = 250},
+    },
+    energy_required = 1,
+    results = {{type="item", name="gas-ballon-SO2", amount=1}},
+    allow_productivity = true
+  }, 
+ 
+ {
+    type = "recipe",
+    name = "un-gas-ballon-H2S",
+    category = "crafting-with-fluid",auto_recycle=false,
+		icons = {
+			{
+				icon = "__shchierbin__/graphics/ballon/ballon-H2S.png",
+				icon_size = 64,
+				scale = 0.9,
+				shift = { 2, 2 },
+				draw_background = true,
+			},
+			{
+				icon = "__shchierbin__/graphics/fluid/hydrogen-sulfide.png",
+				icon_size = 64,
+				scale = 0.55,
+				shift = { -11, -11 },
+				draw_background = true,
+			},
+		},
+    enabled = false,
+    ingredients ={{type="item", name="gas-ballon-H2S", amount=1}},
+    energy_required = 1,
+    results =     {
+      {type = "item", name = "gas-ballon", amount = 1},
+	  {type = "fluid", name = "hydrogen-sulfide", amount = 250},
+    },
+    allow_productivity = true
+  },   {
+    type = "recipe",
+    name = "un-gas-ballon-SO2",
+    category = "crafting-with-fluid",auto_recycle=false,
+		icons = {
+			{
+				icon = "__shchierbin__/graphics/ballon/ballon-SO2.png",
+				icon_size = 64,
+				scale = 0.9,
+				shift = { 2, 2 },
+				draw_background = true,
+			},
+			{
+				icon = "__shchierbin__/graphics/fluid/sulfur-dioxide.png",
+				icon_size = 64,
+				scale = 0.55,
+				shift = { -11, -11 },
+				draw_background = true,
+			},
+		},
+    enabled = false,
+    ingredients ={{type="item", name="gas-ballon-SO2", amount=1}},
+    energy_required = 1,
+    results =     {
+      {type = "item", name = "gas-ballon", amount = 1},
+	  {type = "fluid", name = "sulfur-dioxide", amount = 250},
+    },
+    allow_productivity = true
+  },
+ 
+  })
+ 
+
+data:extend({
+
+ {
+    type = "recipe",
+    name = "gas-ballon-C2H4",
+    category = "crafting-with-fluid",auto_recycle=false,
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "gas-ballon", amount = 1},
+	  {type = "fluid", name = "ethylene", amount = 250},
+    },
+    energy_required = 1,
+    results = {{type="item", name="gas-ballon-C2H4", amount=1}},
+    allow_productivity = true
+  }, 
+ 
+ {
+    type = "recipe",
+    name = "un-gas-ballon-C2H4",
+    category = "crafting-with-fluid",auto_recycle=false,
+		icons = {
+			{
+				icon = "__shchierbin__/graphics/ballon/ballon-C2H4.png",
+				icon_size = 64,
+				scale = 0.9,
+				shift = { 2, 2 },
+				draw_background = true,
+			},
+			{
+				icon = "__shchierbin__/graphics/fluid/ethylene.png",
+				icon_size = 64,
+				scale = 0.55,
+				shift = { -11, -11 },
+				draw_background = true,
+			},
+		},
+    enabled = false,
+    ingredients ={{type="item", name="gas-ballon-C2H4", amount=1}},
+    energy_required = 1,
+    results =     {
+      {type = "item", name = "gas-ballon", amount = 1},
+	  {type = "fluid", name = "ethylene", amount = 250},
+    },
+    allow_productivity = true
+  }, 
+})  
+  
+local function TECHADDEFF(tech_name, effect)
+	table.insert(data.raw["technology"][tech_name].effects,{ type = "unlock-recipe", recipe=effect})
+end
+
+TECHADDEFF("gas-ballon", "gas-ballon-H2S")
+TECHADDEFF("gas-ballon", "gas-ballon-SO2")
+TECHADDEFF("gas-ballon", "un-gas-ballon-H2S")
+TECHADDEFF("gas-ballon", "un-gas-ballon-SO2")
+
+TECHADDEFF("gas-ballon", "gas-ballon-C2H4")
+TECHADDEFF("gas-ballon", "un-gas-ballon-C2H4")
 --data:extend({  })

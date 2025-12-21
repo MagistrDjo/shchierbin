@@ -45,13 +45,13 @@ data:extend({
     },
     selection_box = {{-1, -1.5}, {1, 1.5}},
     damaged_trigger_effect = hit_effects.entity(),
-    module_slots = 2,
+    module_slots = 4,
     icons_positioning =
     {
       {inventory_index = defines.inventory.furnace_modules, shift = {0, 0.3}}
     },
     icon_draw_specification = {shift = {0, -0.45}},
-    allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"crushing","crushing-vanad-2"},
     crafting_speed = 1.5,
     energy_usage = "720kW",

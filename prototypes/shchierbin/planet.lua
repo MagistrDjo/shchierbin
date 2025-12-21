@@ -3,9 +3,9 @@ local planet_map_gen = require("planet-map-gen")
 local procession_graphic_catalogue_types = require("__base__/prototypes/planet/procession-graphic-catalogue-types")
 local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-definitions")
 
-asteroid_util.shchierbin_ratio       = {6, 2, 0 , 0}
-asteroid_util.shchierbin_chunks    = 0.0010
-asteroid_util.shchierbin_medium    = 0.0035
+asteroid_util.shchierbin_ratio       = {6, 2, 1 , 0}
+asteroid_util.shchierbin_chunks    = 0.0060
+asteroid_util.shchierbin_medium    = 0.0010
 
 asteroid_util.fulgora_shchierbin =
 {
@@ -56,7 +56,7 @@ data:extend(
 	icon_size = 512,
     starmap_icon = "__shchierbin__/graphics/icon/shchierbin.png",
     starmap_icon_size = 512,
-    gravity_pull = 15,
+    gravity_pull = 10,
     distance = 21,
     orientation = 0.25,
     magnitude = 1,
@@ -83,10 +83,10 @@ data:extend(
     {
       clouds = effects.default_clouds_effect_properties()
     },
-    persistent_ambient_sounds =
+--[[    persistent_ambient_sounds =
     {
-      base_ambience = { filename = "__space-age__/sound/wind/base-wind-vulcanus.ogg", volume = 0.3 },
-      wind = { filename = "__space-age__/sound/wind/wind-vulcanus.ogg", volume = 0.8 },
+      base_ambience = { filename = "__space-age__/sound/wind/base-wind-vulcanus.ogg", volume = 0.0 },
+      wind = { filename = "__space-age__/sound/wind/wind-vulcanus.ogg", volume = 0.0 },
       crossfade =
       {
         order = { "wind", "base_ambience" },
@@ -94,7 +94,7 @@ data:extend(
         from = { control = 0.35, volume_percentage = 0.0 },
         to = { control = 2, volume_percentage = 100.0 }
       }
-    },
+    },]]
     procession_graphic_catalogue =
     {
       {

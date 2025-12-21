@@ -16,5 +16,12 @@ data:extend({
 		name = "vannila-ammiak",
 		setting_type = "startup",
     default_value = false,
-	} --†
+	}, --†
+	
+		{
+		type = "bool-setting",
+		name = "old-crusher",
+		setting_type = "startup",
+    default_value = false,
+	}
 })

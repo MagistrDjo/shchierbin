@@ -1,0 +1,36 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1 (dev-2)
+Date: 2025-09-17
+- Added compatibility with Canal-excavator and Bio Industries 2.
+- Update english locale.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1 (dev)
+Date: 2025-09-17
+- Replacing coal with carbon-ore.
+- Minor bug fixes.
+- Update russian locale.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.4
+Date: 2025-09-17
+- Update recipe vanadium catalyst, now plastic-bar is needed instead of steel-plate.
+- Added recipes for sulfur, solid and rocket fuel
+---------------------------------------------------------------------------------------------------
+Version: 0.2.3
+Date: 2025-08-23
+- Small fixes bugs.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+Date: 2025-08-21
+- Update locale and crusher module. 
+---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 2025-08-20
+- Add natural gas, sulfur gases and chloroplastic, edit recipe vanadium sciencee pack. 
+---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+Date: 2025-08-18
+- Add compatibility paht with Maraxsis, Muluna and Corrundum
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 2025-08-18
+- Minor bug fixes.

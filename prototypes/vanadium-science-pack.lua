@@ -33,7 +33,7 @@ data:extend {{
         amount = 1,
     },
     prerequisites = {
-        "chlorine-processing","vanadium-plate"
+        "chlorine-processing","vanadium-plate","sulfur-acid-processing"
     },
     order = "eg[petrol-science-pack]",
 }}

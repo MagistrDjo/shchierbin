@@ -118,35 +118,51 @@ data:extend({
     research_trigger =
     {
       type = "mine-entity",
-      entity = "ashland-lichen-tree"
+      entity = "carbon-ore"
     } 
   },
-----------------------------------------------------------------------------------------------------------------------  gas
-  --[[ {
+----------------------------------------------------------------------------------------------------------------------  gas+sera
+   {
     type = "technology",
     name = "natural-gas-processing",
-    icon = "__shchierbin__/graphics/technology/vanadium-processing.png",
-    icon_size = 256,
+    icon = "__shchierbin__/graphics/technology/natural-gas.png",
+    icon_size = 64,
     effects =
     {
       {
         type = "unlock-recipe",
         recipe = "natural-gas-processing"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "solid-fuel-from-methane"
+      },
     },
     prerequisites = {"planet-discovery-shchierbin"},
     research_trigger =
     {
-      type = "mine-entity",
-      entity = "natural-gas"
+      type = "craft-fluid",
+      fluid = "natural-gas"
     } 
-  },]]{
+  },{
     type = "technology",
     name = "sulfur-acid-processing",
     icon = "__shchierbin__/graphics/technology/vanadium-oxide-catalyst.png",
     icon_size = 256,
     effects =
     {
+      {
+        type = "unlock-recipe",
+        recipe = "sulfur-dioxide-from-hydrogen-sulfide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sulfur-dioxide-from-sulfur"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sulfur-from-sulfuric-gases"
+      },
       {
         type = "unlock-recipe",
         recipe = "vanadium-oxide-catalyst"
@@ -156,10 +172,10 @@ data:extend({
         recipe = "sulfuric-acid-vanadium"
       },
     },
-    prerequisites = {"vanadium-oxide","chlorine-processing"},
+    prerequisites = {"vanadium-oxide","chlorine-processing","natural-gas-processing"},
 unit =
     {
-      count = 250,
+      count = 100,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -170,7 +186,7 @@ unit =
       time = 30
     }
   },
----------------------------------------------------------------------------------------------------------------------- water-salt
+---------------------------------------------------------------------------------------------------------------------- water-salt +clor gas
   {
     type = "technology",
     name = "chlorine-processing",
@@ -223,6 +239,36 @@ unit =
       },
       time = 30
     }
+  },  {
+    type = "technology",
+    name = "chlorine-soed",
+    icon = "__shchierbin__/graphics/technology/chlororganig-bildung.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "chloromethane"
+      },
+     {
+        type = "unlock-recipe",
+        recipe = "ethylene"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "vinylchloride"
+      },
+     {
+        type = "unlock-recipe",
+        recipe = "plastic-vinylchloride"
+      },
+    },
+    prerequisites = {"chlorine-processing","natural-gas-processing"},
+    research_trigger =
+    {
+      type = "craft-fluid",
+      fluid = "methane"
+    } 
   },
 
 ---------------------------------------------------------------------------------------------------------------------- post-vanadium
@@ -262,7 +308,7 @@ unit =
     type = "technology",
     name = "crusher-vanad",
     icon = "__shchierbin__/graphics/technology/crusher-2.png",
-    icon_size = 128,
+    icon_size = 256,
     effects =
     {
 	      {
@@ -432,6 +478,10 @@ unit =
         type = "unlock-recipe",
         recipe = "ammonia-syntes"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "ammonia-rocket-fuel"
+      },
     },
     prerequisites = {"atmosphere-processing"},
 unit =
@@ -506,4 +556,3 @@ unit =
     }
   }
 })
-

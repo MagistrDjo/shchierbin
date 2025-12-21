@@ -8,7 +8,7 @@ data:extend({
   sound =
   {
     filename = "__shchierbin__/locale/sibiriada.ogg",
-    volume = 0.8
+    volume = 0.6
   }
 }
 })
