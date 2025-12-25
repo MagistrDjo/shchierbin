@@ -1,11 +1,16 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.3.1 (dev-2)
-Date: 2025-09-17
+Version: 0.3.13
+Date: 2025-12-25
+- Fixing compatibility with Maraxsis.
+- Minor fixes.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.12 (dev-2)
+Date: 2025-12-17
 - Added compatibility with Canal-excavator and Bio Industries 2.
 - Update english locale.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.1 (dev)
-Date: 2025-09-17
+Date: 2025-10-17
 - Replacing coal with carbon-ore.
 - Minor bug fixes.
 - Update russian locale.

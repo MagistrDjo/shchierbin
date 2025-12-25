@@ -1,11 +1,11 @@
 {
     "name": "shchierbin",
-    "version": "0.3.12",
+    "version": "0.3.13",
     "title": "Shchierbin",
     "author": "Magistr-Djo",
     "factorio_version": "2.0",
 	"homepage": "https://discord.gg/Mu7zkD7THf",
-    "description": "Ščierbin",
+    "description": "Ščierbin - dapamožny sviet vanadija",
     "dependencies": [
 	"base >= 2.0.7",
 	"space-age >= 2.0.7",
