@@ -248,7 +248,11 @@ data:extend({
     },
     energy_required = 2,
     results = {{type = "fluid", name = "sulfur-dioxide", amount = 20},{type = "fluid", name = "steam", amount = 40, temperature = 165}},
-    allow_productivity = true
+    allow_productivity = true,    crafting_machine_tint =
+    {
+      primary = {r = 0.8, g = 0.8, b = 0, a = 1.000},
+      secondary = {r = 0.8, g = 0.8, b = 0.1, a = 1.000},
+    }
   },{ 
     type = "recipe",
     name = "sulfur-dioxide-from-sulfur",
@@ -267,7 +271,11 @@ data:extend({
     },
     energy_required = 1,
     results = {{type = "fluid", name = "sulfur-dioxide", amount = 100}},
-    allow_productivity = true
+    allow_productivity = true,    crafting_machine_tint =
+    {
+      primary = {r = 0.8, g = 0.8, b = 0, a = 1.000},
+      secondary = {r = 0.8, g = 0.8, b = 0.1, a = 1.000},
+    }
   },{
     type = "recipe",
     name = "sulfuric-acid-vanadium",
@@ -299,7 +307,11 @@ data:extend({
 	{type = "fluid", name = "sulfuric-acid", amount = 200},
 	{type = "item", name = "vanadium-oxide-catalyst", amount = 1, probability = 0.98}
 	},
-    allow_productivity = true
+    allow_productivity = true,    crafting_machine_tint =
+    {
+      primary = {r = 0.9, g = 0.9, b = 0, a = 1.000},
+      secondary = {r = 0.9, g = 0.9, b = 0.3, a = 1.000},
+    }
   },{
     type = "recipe",
     name = "sulfur-from-sulfuric-gases",
@@ -340,7 +352,11 @@ data:extend({
 	{type = "fluid", name = "steam", amount = 200, temperature = 165},
 	{type = "item", name = "sulfur", amount = 3}
 	},
-    allow_productivity = true
+    allow_productivity = true,    crafting_machine_tint =
+    {
+      primary = {r = 0.8, g = 0.8, b = 0, a = 1.000},
+      secondary = {r = 0.8, g = 0.8, b = 0.1, a = 1.000},
+    }
   },{ ------------------------------------------------------------------------------ clor
     type = "recipe",
     name = "salt",
@@ -369,7 +385,11 @@ data:extend({
     },
     energy_required = 10,
     results = {{type="fluid", name="chlorine", amount=100},{type="fluid", name="sodium-hydroxide", amount=10}},
-    allow_productivity = true
+    allow_productivity = true,    crafting_machine_tint =
+    {
+      primary = {r = 0, g = 0.8, b = 0.1, a = 1.000},
+      secondary = {r = 0.3, g = 0.8, b = 0.4, a = 1.000},
+    }
   },{
     type = "recipe",
     name = "ferric-chloride",
@@ -382,7 +402,11 @@ data:extend({
     },
     energy_required = 10,
     results = {{type="fluid", name="ferric-chloride", amount=20}},
-    allow_productivity = true
+    allow_productivity = true,    crafting_machine_tint =
+    {
+      primary = {r = 0.6, g = 0.4, b = 0, a = 1.000},
+      secondary = {r = 0.6, g = 0.4, b = 0.1, a = 1.000},
+    }
   },{
     type = "recipe",
     name = "fecl-advanced-circuit",
