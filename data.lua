@@ -19,4 +19,8 @@ require("prototypes.entity.crusher")
 require("prototypes.entity.accum-van")
 require("prototypes.entity.chemical-furnace")
 
+if mods["canal-excavator"] then require("prototypes.integer.canal") end
+
 if settings.startup["off-music"].value == false then require("prototypes.music") end
+
+

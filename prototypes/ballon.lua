@@ -115,7 +115,7 @@ data:extend({
     subgroup = "barrel",
     order = "d",
 	stack_size = 50,
-    weight = 2*kg,
+    weight = 2*kg,  
 		auto_recycle=false
   },    {
     type = "item",
@@ -125,7 +125,7 @@ data:extend({
     subgroup = "barrel",
     order = "d",
 	stack_size = 50,
-    weight = 2*kg,
+    weight = 2*kg,  
 		auto_recycle=false
   },    {
     type = "item",
@@ -135,7 +135,7 @@ data:extend({
     subgroup = "barrel",
     order = "d",
 	stack_size = 50,
-    weight = 2*kg,
+    weight = 2*kg,   
 		auto_recycle=false
   },    {
     type = "item",
@@ -145,7 +145,7 @@ data:extend({
     subgroup = "barrel",
     order = "d",
 	stack_size = 50,
-    weight = 2*kg,
+    weight = 2*kg,  
 		auto_recycle=false
   },    {
     type = "item",
@@ -155,7 +155,7 @@ data:extend({
     subgroup = "barrel",
     order = "d",
 	stack_size = 50,
-    weight = 2*kg,
+    weight = 2*kg, 
 		auto_recycle=false
   },    {
     type = "item",
@@ -165,7 +165,7 @@ data:extend({
     subgroup = "barrel",
     order = "d",
 	stack_size = 50,
-    weight = 2*kg,
+    weight = 2*kg,    
 		auto_recycle=false
   },    {
     type = "item",
@@ -175,7 +175,7 @@ data:extend({
     subgroup = "barrel",
     order = "d",
 	stack_size = 50,
-    weight = 2*kg,
+    weight = 2*kg,   
 		auto_recycle=false
   },    {
     type = "item",
@@ -195,7 +195,7 @@ data:extend({
     subgroup = "barrel",
     order = "d",
 	stack_size = 50,
-    weight = 2*kg,
+    weight = 2*kg, 
 		auto_recycle=false
   },
   
@@ -206,7 +206,7 @@ data:extend({
    {
     type = "recipe",
     name = "gas-ballon-N",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -215,11 +215,11 @@ data:extend({
     },
     energy_required = 1,
     results = {{type="item", name="gas-ballon-N", amount=1}},
-    allow_productivity = true
+    allow_productivity = false
   },   {
     type = "recipe",
     name = "gas-ballon-H",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -228,12 +228,12 @@ data:extend({
     },
     energy_required = 1,
     results = {{type="item", name="gas-ballon-H", amount=1}},
-    allow_productivity = true
+    allow_productivity = false
   },
    {
     type = "recipe",
     name = "gas-ballon-O",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -242,12 +242,12 @@ data:extend({
     },
     energy_required = 1,
     results = {{type="item", name="gas-ballon-O", amount=1}},
-    allow_productivity = true
+    allow_productivity = false
   },
    {
     type = "recipe",
     name = "gas-ballon-CO2",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -256,12 +256,12 @@ data:extend({
     },
     energy_required = 1,
     results = {{type="item", name="gas-ballon-CO2", amount=1}},
-    allow_productivity = true
+    allow_productivity = false
   },
    {
     type = "recipe",
     name = "gas-ballon-Cl",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -270,12 +270,12 @@ data:extend({
     },
     energy_required = 1,
     results = {{type="item", name="gas-ballon-Cl", amount=1}},
-    allow_productivity = true
+    allow_productivity = false
   },
    {
     type = "recipe",
     name = "gas-ballon-NH3",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -284,7 +284,7 @@ data:extend({
     },
     energy_required = 1,
     results = {{type="item", name="gas-ballon-NH3", amount=1}},
-    allow_productivity = true
+    allow_productivity = false
   },
 
 })
@@ -293,7 +293,7 @@ data:extend({
    {
     type = "recipe",
     name = "un-gas-ballon-N",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
 		icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-N.png",
@@ -318,11 +318,11 @@ data:extend({
       {type = "item", name = "gas-ballon", amount = 1},
 	  {type = "fluid", name = "nitrogen", amount = 250},
     },
-    allow_productivity = true
+    allow_productivity = false
   },   {
     type = "recipe",
     name = "un-gas-ballon-H",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
 		icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-H.png",
@@ -347,12 +347,12 @@ data:extend({
       {type = "item", name = "gas-ballon", amount = 1},
 	  {type = "fluid", name = "hydrogen", amount = 250},
     },
-    allow_productivity = true
+    allow_productivity = false
   },
    {
     type = "recipe",
     name = "un-gas-ballon-O",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
 			icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-O.png",
@@ -378,12 +378,12 @@ data:extend({
       {type = "item", name = "gas-ballon", amount = 1},
 	  {type = "fluid", name = "oxygen", amount = 250},
     },
-    allow_productivity = true
+    allow_productivity = false
   },
    {
     type = "recipe",
     name = "un-gas-ballon-CO2",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
 			icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-CO2.png",
@@ -409,12 +409,12 @@ data:extend({
       {type = "item", name = "gas-ballon", amount = 1},
 	  {type = "fluid", name = "carbon-dioxide", amount = 250},
     },
-    allow_productivity = true
+    allow_productivity = false
   },
    {
     type = "recipe",
     name = "un-gas-ballon-Cl",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
 			icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-Cl.png",
@@ -440,12 +440,12 @@ data:extend({
       {type = "item", name = "gas-ballon", amount = 1},
 	  {type = "fluid", name = "chlorine", amount = 250},
     },
-    allow_productivity = true
+    allow_productivity = false
   },
    {
     type = "recipe",
     name = "un-gas-ballon-NH3",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
 				icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-NH3.png",
@@ -471,7 +471,7 @@ data:extend({
       {type = "item", name = "gas-ballon", amount = 1},
 	  {type = "fluid", name = "ammonia", amount = 250},
     },
-    allow_productivity = true
+    allow_productivity = false
   },
 
 })
@@ -480,7 +480,7 @@ data:extend({
    {
     type = "recipe",
     name = "gas-ballon-H2S",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -489,11 +489,11 @@ data:extend({
     },
     energy_required = 1,
     results = {{type="item", name="gas-ballon-H2S", amount=1}},
-    allow_productivity = true
+    allow_productivity = false
   },   {
     type = "recipe",
     name = "gas-ballon-SO2",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -502,13 +502,13 @@ data:extend({
     },
     energy_required = 1,
     results = {{type="item", name="gas-ballon-SO2", amount=1}},
-    allow_productivity = true
+    allow_productivity = false
   }, 
  
  {
     type = "recipe",
     name = "un-gas-ballon-H2S",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
 		icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-H2S.png",
@@ -533,11 +533,11 @@ data:extend({
       {type = "item", name = "gas-ballon", amount = 1},
 	  {type = "fluid", name = "hydrogen-sulfide", amount = 250},
     },
-    allow_productivity = true
+    allow_productivity = false
   },   {
     type = "recipe",
     name = "un-gas-ballon-SO2",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
 		icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-SO2.png",
@@ -562,7 +562,7 @@ data:extend({
       {type = "item", name = "gas-ballon", amount = 1},
 	  {type = "fluid", name = "sulfur-dioxide", amount = 250},
     },
-    allow_productivity = true
+    allow_productivity = false
   },
  
   })
@@ -573,7 +573,7 @@ data:extend({
  {
     type = "recipe",
     name = "gas-ballon-C2H4",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -582,13 +582,13 @@ data:extend({
     },
     energy_required = 1,
     results = {{type="item", name="gas-ballon-C2H4", amount=1}},
-    allow_productivity = true
+    allow_productivity = false
   }, 
  
  {
     type = "recipe",
     name = "un-gas-ballon-C2H4",
-    category = "crafting-with-fluid",auto_recycle=false,
+    category = "ballon-recipe",auto_recycle=false,
 		icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-C2H4.png",
@@ -613,7 +613,7 @@ data:extend({
       {type = "item", name = "gas-ballon", amount = 1},
 	  {type = "fluid", name = "ethylene", amount = 250},
     },
-    allow_productivity = true
+    allow_productivity = false
   }, 
 })  
   

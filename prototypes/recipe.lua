@@ -21,7 +21,7 @@ data:extend({
     },
     energy_required = 1,
     results = {{type="item", name="slaked-lime", amount=1}},
-    allow_productivity = true
+    allow_productivity = false
   },{
     type = "recipe",
     name = "calcium",
@@ -36,7 +36,7 @@ data:extend({
     },
     energy_required = 8,
     results = {{type="item", name="calcium", amount=1},{type = "fluid", name = "water", amount = 10}},
-    allow_productivity = true
+    allow_productivity = false
   },{ ------------------------------------------------------------------------------ Vanad ore obrabtka
     type = "recipe",
     name = "vanadium-concetrate",
@@ -148,7 +148,7 @@ data:extend({
     },
     energy_required = 2,
     results = {{type="fluid", name="chloromethane", amount=20}},
-    allow_productivity = true
+    allow_productivity = false
   },{
     type = "recipe",
     name = "ethylene",
@@ -163,7 +163,7 @@ data:extend({
     },
     energy_required = 7,
     results = {{type="fluid", name="ethylene", amount=25},{type = "item", name = "salt", amount = 1}},
-    allow_productivity = true
+    allow_productivity = false
   },{
     type = "recipe",
     name = "vinylchloride",
@@ -175,7 +175,7 @@ data:extend({
     },
     energy_required = 3,
     results = {{type="fluid", name="vinylchloride", amount=20}},
-    allow_productivity = true
+    allow_productivity = false
   },{
     type = "recipe",
     name = "plastic-vinylchloride",
@@ -248,7 +248,7 @@ data:extend({
     },
     energy_required = 2,
     results = {{type = "fluid", name = "sulfur-dioxide", amount = 20},{type = "fluid", name = "steam", amount = 40, temperature = 165}},
-    allow_productivity = true,    crafting_machine_tint =
+    allow_productivity = false,    crafting_machine_tint =
     {
       primary = {r = 0.8, g = 0.8, b = 0, a = 1.000},
       secondary = {r = 0.8, g = 0.8, b = 0.1, a = 1.000},
@@ -271,7 +271,7 @@ data:extend({
     },
     energy_required = 1,
     results = {{type = "fluid", name = "sulfur-dioxide", amount = 100}},
-    allow_productivity = true,    crafting_machine_tint =
+    allow_productivity = false,    crafting_machine_tint =
     {
       primary = {r = 0.8, g = 0.8, b = 0, a = 1.000},
       secondary = {r = 0.8, g = 0.8, b = 0.1, a = 1.000},
@@ -307,7 +307,7 @@ data:extend({
 	{type = "fluid", name = "sulfuric-acid", amount = 200},
 	{type = "item", name = "vanadium-oxide-catalyst", amount = 1, probability = 0.98}
 	},
-    allow_productivity = true,    crafting_machine_tint =
+    allow_productivity = false,    crafting_machine_tint =
     {
       primary = {r = 0.9, g = 0.9, b = 0, a = 1.000},
       secondary = {r = 0.9, g = 0.9, b = 0.3, a = 1.000},
@@ -352,7 +352,7 @@ data:extend({
 	{type = "fluid", name = "steam", amount = 200, temperature = 165},
 	{type = "item", name = "sulfur", amount = 3}
 	},
-    allow_productivity = true,    crafting_machine_tint =
+    allow_productivity = false,    crafting_machine_tint =
     {
       primary = {r = 0.8, g = 0.8, b = 0, a = 1.000},
       secondary = {r = 0.8, g = 0.8, b = 0.1, a = 1.000},
@@ -385,7 +385,7 @@ data:extend({
     },
     energy_required = 10,
     results = {{type="fluid", name="chlorine", amount=100},{type="fluid", name="sodium-hydroxide", amount=10}},
-    allow_productivity = true,    crafting_machine_tint =
+    allow_productivity = false,    crafting_machine_tint =
     {
       primary = {r = 0, g = 0.8, b = 0.1, a = 1.000},
       secondary = {r = 0.3, g = 0.8, b = 0.4, a = 1.000},
@@ -402,7 +402,7 @@ data:extend({
     },
     energy_required = 10,
     results = {{type="fluid", name="ferric-chloride", amount=20}},
-    allow_productivity = true,    crafting_machine_tint =
+    allow_productivity = false,    crafting_machine_tint =
     {
       primary = {r = 0.6, g = 0.4, b = 0, a = 1.000},
       secondary = {r = 0.6, g = 0.4, b = 0.1, a = 1.000},
@@ -593,7 +593,7 @@ data:extend({
     },
     energy_required = 1,
     results = {{type="fluid", name="nitrogen", amount=80},{type="fluid", name="oxygen", amount=20}},
-    allow_productivity = true
+    allow_productivity = false
   },{
     type = "recipe",
     name = "water-electrolysis-shchierbin",
@@ -629,7 +629,7 @@ data:extend({
     },
     energy_required = 9,
     results = {{type="fluid", name="hydrogen", amount=1000},{type="fluid", name="oxygen", amount= 500}},
-    allow_productivity = true
+    allow_productivity = false
   },{
     type = "recipe",
     name = "ammonia-syntes",
@@ -665,7 +665,7 @@ data:extend({
     },
     energy_required = 3,
     results = {{type="fluid", name="ammonia", amount=20}},
-    allow_productivity = true
+    allow_productivity = false
   },
     ------------------------------------------------------------------------------ uber-sekret-tehnologija
   --[[{                                                                              --etilen + SCl2 = iprit ; S + Cl2 = SCl2

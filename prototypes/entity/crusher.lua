@@ -45,6 +45,7 @@ data:extend({
     },
     selection_box = {{-1, -1.5}, {1, 1.5}},
     damaged_trigger_effect = hit_effects.entity(),
+    effect_receiver = { base_effect = { productivity = 0.4 }},
     module_slots = 4,
     icons_positioning =
     {

@@ -16,11 +16,15 @@ data:extend({
     type = "item-subgroup",
     name = "gas-recipe",
     group = "intermediate-products",
-    order = "nc",
+    order = "nc",	
   },
   {
     type = "recipe-category",
     name = "crushing-vanad-2"
+  },
+  {
+    type = "recipe-category",
+    name = "ballon-recipe"
   },
   {
     type = "recipe-category",
