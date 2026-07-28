@@ -57,7 +57,7 @@ data:extend({
 	{
     type = "recipe",
     name = "crusher-vanad",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     ingredients =
     {
@@ -74,7 +74,7 @@ data:extend({
   },	{
     type = "recipe",
     name = "accumulator-vanad",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     ingredients =
     {

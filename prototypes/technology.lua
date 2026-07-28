@@ -48,7 +48,7 @@ data:extend({
     research_trigger =
     {
       type = "mine-entity",
-      entity = "vanadium-ore"
+      entities = {"vanadium-ore"}
     }
   },{
     type = "technology",
@@ -118,7 +118,7 @@ data:extend({
     research_trigger =
     {
       type = "mine-entity",
-      entity = "carbon-ore"
+      entities = {"carbon-ore"}
     } 
   },
 ----------------------------------------------------------------------------------------------------------------------  gas+sera

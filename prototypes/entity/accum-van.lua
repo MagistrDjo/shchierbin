@@ -1,7 +1,6 @@
 require ("util")
 require ("__base__.prototypes.entity.pipecovers")
 require ("__core__.lualib.circuit-connector-sprites")
-require ("__base__.prototypes.entity.assemblerpipes")
 require ("__base__.prototypes.entity.laser-sounds")
 require ("__base__.prototypes.entity.enemy-constants")
 require ("__base__.prototypes.entity.spawner-animation")

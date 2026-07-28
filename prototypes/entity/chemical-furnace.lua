@@ -8,7 +8,6 @@ local meld = require("meld")
 local simulations = require("__space-age__.prototypes.factoriopedia-simulations")
 require ("__base__.prototypes.entity.pipecovers")
 require ("__core__.lualib.circuit-connector-sprites")
-require ("__base__.prototypes.entity.assemblerpipes")
 require ("__base__.prototypes.entity.laser-sounds")
 require ("__base__.prototypes.entity.enemy-constants")
 require ("__base__.prototypes.entity.spawner-animation")
@@ -40,10 +39,10 @@ data:extend({
     module_slots = 1,
     allowed_effects = {"consumption"},
     icon_draw_specification = {shift = {0, -0.1}},
-    icons_positioning =
+   --[[ icons_positioning =
     {
       {inventory_index = defines.inventory.furnace_modules, shift = {0, 0.8}}
-    },
+    },]]
 	
     graphics_set =
     {

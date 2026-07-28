@@ -61,6 +61,15 @@ data:extend({
         type = "unlock-recipe",
         recipe = "un-gas-ballon-NH3"
       },
+--------------------
+    {
+        type = "unlock-recipe",
+        recipe = "gas-ballon-air"
+      }, {
+        type = "unlock-recipe",
+        recipe = "un-gas-ballon-air"
+      },
+	-----------------------  
     },
     prerequisites = {"vanadium-steel-plate","atmosphere-processing","water-electrolysis"},
 unit =
@@ -91,7 +100,7 @@ unit =
     {
     type = "recipe",
     name = "gas-ballon",
-    category = "crafting",
+    categories = {"crafting"},
     enabled = false,
     ingredients =
     {
@@ -106,6 +115,17 @@ unit =
 })
 
 data:extend({
+    {
+    type = "item",
+    name = "gas-ballon-air",
+	icon = "__shchierbin__/graphics/ballon/ballon-air.png",
+	icon_size = 64,
+    subgroup = "barrel",
+    order = "d",
+	stack_size = 50,
+    weight = 2*kg,  
+		auto_recycle=false
+  },    
 
     {
     type = "item",
@@ -202,11 +222,56 @@ data:extend({
 })
 
 data:extend({
-   
+   -------------------------------------
+   {
+    type = "recipe",
+    name = "un-gas-ballon-air",
+    categories = {"ballon-recipe"}, auto_recycle=false,
+		icons = {
+			{
+				icon = "__shchierbin__/graphics/ballon/ballon-air.png",
+				icon_size = 64,
+				scale = 0.9,
+				shift = { 2, 2 },
+				draw_background = true,
+			},
+			{
+				icon = "__shchierbin__/graphics/fluid/atmosphere.png",
+				icon_size = 64,
+				scale = 0.55,
+				shift = { -11, -11 },
+				draw_background = true,
+			},
+		},
+    enabled = false,    
+    subgroup = "barrel", order = "db",
+    ingredients ={{type="item", name="gas-ballon-air", amount=1}},
+    energy_required = 1,
+    results =     {
+      {type = "item", name = "gas-ballon", amount = 1},
+	  {type = "fluid", name = "maraxsis-atmosphere", amount = 250},
+    },
+    allow_productivity = false
+  },{
+    type = "recipe",
+    name = "gas-ballon-air",
+    categories = {"ballon-recipe"},auto_recycle=false,
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "gas-ballon", amount = 1},
+	  {type = "fluid", name = "maraxsis-atmosphere", amount = 250},
+    },
+    energy_required = 1,
+    results = {{type="item", name="gas-ballon-air", amount=1}},
+    allow_productivity = false
+  }, 
+  -----------------------------------------------------------------
+  
    {
     type = "recipe",
     name = "gas-ballon-N",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -219,7 +284,7 @@ data:extend({
   },   {
     type = "recipe",
     name = "gas-ballon-H",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -233,7 +298,7 @@ data:extend({
    {
     type = "recipe",
     name = "gas-ballon-O",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -247,7 +312,7 @@ data:extend({
    {
     type = "recipe",
     name = "gas-ballon-CO2",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -261,7 +326,7 @@ data:extend({
    {
     type = "recipe",
     name = "gas-ballon-Cl",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -275,7 +340,7 @@ data:extend({
    {
     type = "recipe",
     name = "gas-ballon-NH3",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -293,7 +358,7 @@ data:extend({
    {
     type = "recipe",
     name = "un-gas-ballon-N",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
 		icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-N.png",
@@ -322,7 +387,7 @@ data:extend({
   },   {
     type = "recipe",
     name = "un-gas-ballon-H",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
 		icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-H.png",
@@ -352,7 +417,7 @@ data:extend({
    {
     type = "recipe",
     name = "un-gas-ballon-O",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
 			icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-O.png",
@@ -383,7 +448,7 @@ data:extend({
    {
     type = "recipe",
     name = "un-gas-ballon-CO2",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
 			icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-CO2.png",
@@ -414,7 +479,7 @@ data:extend({
    {
     type = "recipe",
     name = "un-gas-ballon-Cl",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
 			icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-Cl.png",
@@ -445,7 +510,7 @@ data:extend({
    {
     type = "recipe",
     name = "un-gas-ballon-NH3",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
 				icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-NH3.png",
@@ -480,7 +545,7 @@ data:extend({
    {
     type = "recipe",
     name = "gas-ballon-H2S",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -493,7 +558,7 @@ data:extend({
   },   {
     type = "recipe",
     name = "gas-ballon-SO2",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -508,7 +573,7 @@ data:extend({
  {
     type = "recipe",
     name = "un-gas-ballon-H2S",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
 		icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-H2S.png",
@@ -537,7 +602,7 @@ data:extend({
   },   {
     type = "recipe",
     name = "un-gas-ballon-SO2",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
 		icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-SO2.png",
@@ -573,7 +638,7 @@ data:extend({
  {
     type = "recipe",
     name = "gas-ballon-C2H4",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
     enabled = false,
     ingredients =
     {
@@ -588,7 +653,7 @@ data:extend({
  {
     type = "recipe",
     name = "un-gas-ballon-C2H4",
-    category = "ballon-recipe",auto_recycle=false,
+    categories = {"ballon-recipe"},auto_recycle=false,
 		icons = {
 			{
 				icon = "__shchierbin__/graphics/ballon/ballon-C2H4.png",

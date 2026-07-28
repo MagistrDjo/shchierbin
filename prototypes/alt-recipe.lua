@@ -4,6 +4,7 @@ data:extend({
       type = "recipe",
       name = "artillery-shell-vanad",
       enabled = false,
+    auto_recycle = false,
       ingredients =
       {
   {type = "item", name = "radar", amount = 1},

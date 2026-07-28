@@ -35,3 +35,9 @@
 
 data.raw["fluid"]["oxygen"].auto_barrel = false
 data.raw["fluid"]["hydrogen"].auto_barrel = false
+data.raw["fluid"]["maraxsis-atmosphere"].auto_barrel = false
+
+table.insert(data.raw["technology"]["planet-discovery-maraxsis"].prerequisites, "gas-ballon")
+--data.raw[item][maraxsis-atmosphere-barrel] = nil
+--data.raw[recipe][maraxsis-atmosphere-barrel] = nil
+--data.raw[recipe][maraxsis-atmosphere-barreling] = nil

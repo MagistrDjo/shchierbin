@@ -1,16 +1,17 @@
 {
     "name": "shchierbin",
-    "version": "0.3.14",
+    "version": "0.3.15",
     "title": "Shchierbin",
     "author": "Magistr-Djo",
-    "factorio_version": "2.0",
+    "factorio_version": "2.1",
 	"homepage": "https://discord.gg/Mu7zkD7THf",
     "description": "Ščierbin - dapamožny sviet vanadija",
     "dependencies": [
-	"base >= 2.0.7",
-	"space-age >= 2.0.7",
+	"base >= 2.1.0",
+	"space-age >= 2.1.0",
 	"? Flare Stack >= 3.0.0",
 	"? Bio_Industries_2",
-	"? canal-excavator >= 1.10"
+	"? canal-excavator >= 1.10",	
+	"? Cerys-Moon-of-Fulgora"
 	]
 }

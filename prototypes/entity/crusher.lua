@@ -47,10 +47,10 @@ data:extend({
     damaged_trigger_effect = hit_effects.entity(),
     effect_receiver = { base_effect = { productivity = 0.4 }},
     module_slots = 4,
-    icons_positioning =
+   --[[ icons_positioning =
     {
       {inventory_index = defines.inventory.furnace_modules, shift = {0, 0.3}}
-    },
+    },]]
     icon_draw_specification = {shift = {0, -0.45}},
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"crushing","crushing-vanad-2"},

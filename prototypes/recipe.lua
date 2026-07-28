@@ -3,7 +3,7 @@ data:extend({
     {
     type = "recipe",
     name = "quicklime",
-    category = "smelting",
+    categories = {"smelting"},
     energy_required = 3.2,
     ingredients = {{type = "item", name = "calcite", amount = 1}},
     results = {{type="item", name="quicklime", amount=1}},
@@ -12,7 +12,7 @@ data:extend({
     },{
     type = "recipe",
     name = "slaked-lime",
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     ingredients =
     {
@@ -28,7 +28,7 @@ data:extend({
 	icon = "__shchierbin__/graphics/item/calcium.png",
     subgroup = "shchierbin", order = "ca",
 	icon_size = 64,
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     ingredients =
     {
@@ -40,7 +40,7 @@ data:extend({
   },{ ------------------------------------------------------------------------------ Vanad ore obrabtka
     type = "recipe",
     name = "vanadium-concetrate",
-    category = "smelting",
+    categories = {"smelting"},
     auto_recycle = false,
     energy_required = 6,
     ingredients = {{type = "item", name = "vanadium-ore", amount = 4}},
@@ -50,7 +50,7 @@ data:extend({
   },{
     type = "recipe",
     name = "vanadium-oxide",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     ingredients =
     {
@@ -65,7 +65,7 @@ data:extend({
     name = "vanadium-dust",
 	icon = "__shchierbin__/graphics/item/vanadium-dust.png",
 	icon_size = 64,
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false, subgroup = "vanadium", order = "da",
     ingredients =
     {
@@ -73,12 +73,12 @@ data:extend({
       {type = "item", name = "calcium", amount = 5}
     },
     energy_required = 6,
-    results = {{type="item", name="vanadium-dust", amount=2},{type="item", name="quicklime", amount=5}},
+    results = {{type="item", name="vanadium-dust", amount=2},{type="item", name="quicklime", amount=5, ignored_by_productivity=5}},
     allow_productivity = true
   },{
     type = "recipe",
     name = "vanadium-plate",
-    category = "smelting",
+    categories = {"smelting"},
     auto_recycle = false,
     energy_required = 9,
     ingredients = {{type = "item", name = "vanadium-dust", amount = 1}},
@@ -88,7 +88,7 @@ data:extend({
   },{
     type = "recipe",
     name = "vanadium-science-pack",
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     ingredients =
     {
@@ -97,12 +97,12 @@ data:extend({
 	  {type = "item", name = "vanadium-oxide-catalyst", amount = 1},
     },
     energy_required = 10,
-    results = {{type="item", name="vanadium-science-pack", amount=1}},
+    results = {{type="item", name="vanadium-science-pack", amount=2}},
     allow_productivity = true
   },{ ------------------------------------------------------------------------------ Vanadd stal
     type = "recipe",
     name = "ferrovanadium",
-    category = "smelting",
+    categories = {"smelting"},
     auto_recycle = false,
     energy_required = 9,
     ingredients = {{type = "item", name = "vanadium-concetrate", amount = 1}},
@@ -112,7 +112,7 @@ data:extend({
   },{
     type = "recipe",
     name = "vanadium-steel-plate",
-    category = "metallurgy",
+    categories = {"metallurgy"},
     enabled = false,
     ingredients =
     {
@@ -127,7 +127,7 @@ data:extend({
     name = "natural-gas-processing",
 	icon = "__shchierbin__/graphics/recipe/natural-gas-processing.png",
 	icon_size = 64,
-    category = "oil-processing",
+    categories = {"oil-processing"},
     enabled = false,
     subgroup = "gas-recipe", order = "a",
     ingredients =
@@ -140,7 +140,7 @@ data:extend({
   },{
     type = "recipe",
     name = "chloromethane",
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     ingredients =
     {
@@ -154,20 +154,20 @@ data:extend({
     name = "ethylene",
 	icon = "__shchierbin__/graphics/fluid/ethylene.png",
 	icon_size = 64,
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     subgroup = "gas-recipe", order = "c",
     ingredients =
     {
-      {type = "fluid", name = "chloromethane", amount = 50},{type = "fluid", name = "sodium-hydroxide", amount = 10}
+      {type = "fluid", name = "chloromethane", amount = 100},{type = "fluid", name = "sodium-hydroxide", amount = 10}
     },
-    energy_required = 7,
-    results = {{type="fluid", name="ethylene", amount=25},{type = "item", name = "salt", amount = 1}},
+    energy_required = 4,
+    results = {{type="fluid", name="ethylene", amount=50},{type = "item", name = "salt", amount = 1}},
     allow_productivity = false
   },{
     type = "recipe",
     name = "vinylchloride",
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     ingredients =
     {
@@ -179,7 +179,7 @@ data:extend({
   },{
     type = "recipe",
     name = "plastic-vinylchloride",
-    category = "chemistry",
+    categories = {"chemistry"},
 	icons = {
 			{
 				icon = "__base__/graphics/icons/plastic-bar.png",
@@ -207,11 +207,11 @@ data:extend({
   },{
     type = "recipe",
     name = "solid-fuel-from-methane",
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     ingredients =
     {
-      {type = "fluid", name = "methane", amount = 40}
+      {type = "fluid", name = "methane", amount = 100}
     },
     energy_required = 1,
     results = {{type="item", name="solid-fuel", amount=1}},
@@ -221,7 +221,7 @@ data:extend({
     name = "plastic-chloromethane",
 	icon = "__shchierbin__/graphics/item/vanadium-ore.png",
 	icon_size = 64,
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     ingredients =
     {
@@ -235,7 +235,7 @@ data:extend({
     name = "sulfur-dioxide-from-hydrogen-sulfide",
 	icon = "__shchierbin__/graphics/fluid/hydrogen-sulfide.png",
 	icon_size = 64,
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     subgroup = "gas-recipe", order = "d",
     surface_conditions = {{
@@ -258,7 +258,7 @@ data:extend({
     name = "sulfur-dioxide-from-sulfur",
 	icon = "__shchierbin__/graphics/fluid/hydrogen-sulfide.png",
 	icon_size = 64,
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     subgroup = "gas-recipe", order = "e",
     surface_conditions = {{
@@ -279,7 +279,7 @@ data:extend({
   },{
     type = "recipe",
     name = "sulfuric-acid-vanadium",
-    category = "chemistry",
+    categories = {"chemistry"},
 	icons = {
 			{
 				icon = "__base__/graphics/icons/fluid/sulfuric-acid.png",
@@ -305,7 +305,7 @@ data:extend({
     energy_required = 4,
     results = {
 	{type = "fluid", name = "sulfuric-acid", amount = 200},
-	{type = "item", name = "vanadium-oxide-catalyst", amount = 1, probability = 0.98}
+	{type = "item", name = "vanadium-oxide-catalyst", amount = 1, independent_probability = 0.98}
 	},
     allow_productivity = false,    crafting_machine_tint =
     {
@@ -315,7 +315,7 @@ data:extend({
   },{
     type = "recipe",
     name = "sulfur-from-sulfuric-gases",
-    category = "chemistry",
+    categories = {"chemistry"},
 	icons = {
 
 			
@@ -362,21 +362,21 @@ data:extend({
     name = "salt",
 	icon = "__shchierbin__/graphics/item/salt.png",
 	icon_size = 64,
-    category = "chemistry",     subgroup = "shchierbin", order = "x",
+    categories = {"chemistry"},    subgroup = "shchierbin", order = "x",
     enabled = false,
     ingredients =
     {
       {type = "fluid", name = "sea-water", amount = 1000}
     },
     energy_required = 5,
-    results = {{type="item", name="salt", amount=1},{type = "fluid", name = "water", amount = 600}},
+    results = {{type="item", name="salt", amount=1},{type = "fluid", name = "water", amount = 200}},
     allow_productivity = true
   },{
     type = "recipe",
     name = "chlorine",
 	icon = "__shchierbin__/graphics/fluid/chlorine.png",
 	icon_size = 64,
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     subgroup = "gas-recipe", order = "b",
     ingredients =
@@ -393,7 +393,7 @@ data:extend({
   },{
     type = "recipe",
     name = "ferric-chloride",
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     ingredients =
     {
@@ -410,7 +410,7 @@ data:extend({
   },{
     type = "recipe",
     name = "fecl-advanced-circuit",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
 	auto_recycle = false,
     enabled = false,
     ingredients =
@@ -444,7 +444,7 @@ data:extend({
   {
     type = "recipe",
     name = "vanadium-oxide-catalyst",
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     ingredients =
     {
@@ -458,7 +458,7 @@ data:extend({
   },{
     type = "recipe",
     name = "vanadium-lithium-battery",
-    category = "electromagnetics",
+    categories = {"electromagnetics"},
     surface_conditions =
     {
       {
@@ -481,7 +481,7 @@ data:extend({
   },{
     type = "recipe",
     name = "vanadium-electro-engine-unit",
-    category = "electromagnetics",
+    categories = {"electromagnetics"},
     enabled = false,
     ingredients =
     {
@@ -501,7 +501,7 @@ data:extend({
     type = "recipe",
     name = "metallic-asteroid-crushing-2",
     icon = "__shchierbin__/graphics/recipe/metallic-asteroid-crushing.png",
-    category = "crushing-vanad-2",
+    categories = {"crushing-vanad-2"},
     subgroup="space-crushing",
     order = "j-a-a",
     auto_recycle = false,
@@ -514,7 +514,7 @@ data:extend({
     results =
     {
       {type = "item", name = "copper-ore", amount = 12},
-      {type = "item", name = "metallic-asteroid-chunk", amount = 1, probability = 0.05}
+      {type = "item", name = "metallic-asteroid-chunk", amount = 1, independent_probability = 0.05}
     },
     allow_productivity = true,
     allow_decomposition = false
@@ -523,7 +523,7 @@ data:extend({
     type = "recipe",
     name = "carbonic-asteroid-crushing-2",
     icon = "__shchierbin__/graphics/recipe/carbonic-asteroid-crushing.png",
-    category = "crushing-vanad-2",
+    categories = {"crushing-vanad-2"},
     subgroup="space-crushing",
     order = "j-a-b",
     auto_recycle = false,
@@ -536,7 +536,7 @@ data:extend({
     results =
     {
       {type = "item", name = "sulfur", amount = 5},
-      {type = "item", name = "carbonic-asteroid-chunk", amount = 1, probability = 0.05}
+      {type = "item", name = "carbonic-asteroid-chunk", amount = 1, independent_probability = 0.05}
     },
     allow_productivity = true,
     allow_decomposition = false
@@ -545,7 +545,7 @@ data:extend({
     type = "recipe",
     name = "oxide-asteroid-crushing-2",
     icon = "__shchierbin__/graphics/recipe/oxide-asteroid-crushing.png",
-    category = "crushing-vanad-2",
+    categories = {"crushing-vanad-2"},
     subgroup="space-crushing",
     order = "j-a-c",
     auto_recycle = false,
@@ -558,7 +558,7 @@ data:extend({
     results =
     {
       {type = "item", name = "calcite", amount = 5},
-      {type = "item", name = "oxide-asteroid-chunk", amount = 1, probability = 0.05}
+      {type = "item", name = "oxide-asteroid-chunk", amount = 1, independent_probability = 0.05}
     },
     allow_productivity = true,
     allow_decomposition = false
@@ -567,7 +567,7 @@ data:extend({
 {
     type = "recipe",
     name = "atmosphere",
-    category = "chemistry",
+    categories = {"chemistry"},
     energy_required = 1,
     ingredients = {},
     results = {
@@ -585,7 +585,7 @@ data:extend({
     name = "atmosphere-goj",
 	icon = "__shchierbin__/graphics/fluid/atmosphere.png",
 	icon_size = 64,
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,                             subgroup = "gas-recipe", order = "ab",
     ingredients =
     {
@@ -621,7 +621,7 @@ data:extend({
 				draw_background = true,
 			},
 		},
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false, subgroup = "gas-recipe", order = "g",
     ingredients =
     {
@@ -657,7 +657,7 @@ data:extend({
 				draw_background = true,
 			},
 		},
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     ingredients =
     {
@@ -668,10 +668,62 @@ data:extend({
     allow_productivity = false
   },
     ------------------------------------------------------------------------------ uber-sekret-tehnologija
+	--[[
+   {type = "recipe",
+    name = "sulfur-dichloride",
+	icon = "__shchierbin__/graphics/fluid/atmosphere.png",
+	icon_size = 64,
+    categories = {"chemistry"},
+    enabled = false,                                 
+	subgroup = "gas-recipe", order = "ca",
+    ingredients =
+    {
+      {type = "item", name = "sulfure", amount = 1},
+      {type = "fluid", name = "chlorine", amount = 100}
+    },
+    energy_required = 1,
+    results = {{type="fluid", name="sulfur-dichloride", amount=10}},
+    allow_productivity = false},
+	
+	{type = "recipe",
+    name = "iprit",
+	icon = "__shchierbin__/graphics/fluid/atmosphere.png",
+	icon_size = 64,
+    categories = {"chemistry"},
+    enabled = false,                                 
+	subgroup = "gas-recipe", order = "cb",
+    ingredients =
+    {
+      {type = "fluid", name = "sulfur-dichloride", amount = 10},
+      {type = "fluid", name = "ethylene", amount = 20}
+    },
+    energy_required = 1,
+    results = {{type="fluid", name="iprit", amount=10},{type="fluid", name="hydrogen", amount=20}},
+    allow_productivity = false},
+	
+	{type = "recipe",
+    name = "fosgen",
+	icon = "__shchierbin__/graphics/fluid/atmosphere.png",
+	icon_size = 64,
+    categories = {"chemistry"},
+    enabled = false,                                 
+	subgroup = "gas-recipe", order = "cb",
+    ingredients =
+    {
+      {type = "fluid", name = "chlorine", amount = 20},
+      {type = "fluid", name = "", amount = 10}
+    },
+    energy_required = 1,
+    results = {{type="fluid", name="fosgen", amount=10}},
+    allow_productivity = false},
+	]]
+	
+	
+	
   --[[{                                                                              --etilen + SCl2 = iprit ; S + Cl2 = SCl2
     type = "recipe",                                                                   -- 2CCl4 + O2 = 2fosgen + 2Cl2
     name = "phosgene",                                                                 -- CO + 2 Cl = fosgen  , fosgen + metanol + 3 Cl2 -4 HCl = difosgen , 
-    category = "chemistry",                                                            -- difosgen ==kat. FeCl3== 2 fosgen
+    categories = {"chemistry"},                                                            -- difosgen ==kat. FeCl3== 2 fosgen
     enabled = false,                                                                   -- zelen krest iz 30 difosgen + 60 fosgen : ukcuc + azotna kislotka = Ацетилнитрат
     ingredients =                                                                      -- zelen krest iz 100 difosgen + [skok hočes] hlorpikrin ; CHCl3 + Ацетилнитрат = hlorpikrin + ukcuc
     {	
