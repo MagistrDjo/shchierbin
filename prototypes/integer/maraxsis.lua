@@ -6,7 +6,7 @@
     name = "salt-v",
 	icon = "__shchierbin__/graphics/item/salt.png",
 	icon_size = 64,
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     ingredients =
     {

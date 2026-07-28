@@ -11,8 +11,12 @@ data:extend({
     name = "shchierbin",
     group = "intermediate-products",
     order = "na",
-  },
-  {
+  },{
+    type = "item-subgroup",
+    name = "shchierbin-bacteria",
+    group = "intermediate-products",
+    order = "nc",
+  },{
     type = "item-subgroup",
     name = "gas-recipe",
     group = "intermediate-products",

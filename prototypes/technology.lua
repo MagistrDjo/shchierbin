@@ -554,5 +554,37 @@ unit =
       },
       time = 60
     }
+  },
+   {
+    type = "technology",
+    name = "frozen-bacteria",
+    icon = "__shchierbin__/graphics/technology/frozen-bacteria.png",
+    icon_size = 256,
+    effects =
+    {
+	      {
+        type = "unlock-recipe",
+        recipe = "vanadium-lithium-battery"
+      },
+	      {
+        type = "unlock-recipe",
+        recipe = "accumulator-vanad"
+      },
+    },
+    prerequisites = {"cryogenic-science-pack","ammonia-syntes"},
+unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"space-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"cryogenic-science-pack", 1}
+      },
+      time = 60
+    },hidden = true 
   }
 })

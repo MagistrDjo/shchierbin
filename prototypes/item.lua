@@ -140,6 +140,75 @@ data:extend({
     order = "j",
 	stack_size = 50,
     weight = 4*kg,
+  },
+------------------------------------------------------------------ bacteria
+{
+    type = "item",
+    name = "frozen-iron-bacteria",
+	icon = "__shchierbin__/graphics/item/frozen-iron-bacteria.png",
+	icon_size = 64, hidden = true ,
+    subgroup = "shchierbin-bacteria",
+    order = "a",
+	stack_size = data.raw.item["iron-bacteria"].stack_size,
+    weight = data.raw.item["iron-bacteria"].weight,
+	spoil_ticks = 5 * minute,
+    spoil_result = "copper-ore"
+  },
+{
+    type = "item",
+    name = "frozen-copper-bacteria",
+	icon = "__shchierbin__/graphics/item/frozen-copper-bacteria.png",
+	icon_size = 64, hidden = true ,
+    subgroup = "shchierbin-bacteria",
+    order = "b",
+	stack_size = data.raw.item["copper-bacteria"].stack_size,
+    weight = data.raw.item["copper-bacteria"].weight,
+    spoil_ticks = 5 * minute,
+    spoil_result = "iron-ore"
+  },
+{
+    type = "item",
+    name = "frozen-vanadium-bacteria",
+	icon = "__shchierbin__/graphics/item/frozen-vanadium-bacteria.png",
+	icon_size = 64, hidden = true ,
+    subgroup = "shchierbin-bacteria",
+    order = "c",
+	stack_size =  50,
+    weight = 1 * kg,
+	spoil_ticks = 5 * minute,
+    spoil_result = "vanadium-bacteria"
+  },{
+    type = "item",
+    name = "pre-vanadium-bacteria",
+	icon = "__shchierbin__/graphics/item/vanadium-bacteria.png",
+	icon_size = 64, hidden = true ,
+    subgroup = "shchierbin-bacteria",
+    order = "d",
+	stack_size = data.raw.item["iron-bacteria"].stack_size,
+    weight = data.raw.item["iron-bacteria"].weight,
+	spoil_ticks = 1 * minute, 
+    spoil_result = "vanadium-ore"
+  },{
+    type = "item",
+    name = "vanadium-bacteria",
+	icon = "__shchierbin__/graphics/item/vanadium-bacteria.png",
+	icon_size = 64, hidden = true ,
+    subgroup = "shchierbin-bacteria",
+    order = "e",
+	stack_size = data.raw.item["iron-bacteria"].stack_size,
+    weight = data.raw.item["iron-bacteria"].weight,
+	spoil_ticks = 1 * minute,
+    spoil_result = "vanadium-ore"
+  },{
+    type = "item",
+    name = "oxide-vanadium-bacteria",
+	icon = "__shchierbin__/graphics/item/vanadium-bacteria.png",
+	icon_size = 64, hidden = true ,
+    subgroup = "shchierbin-bacteria",
+    order = "f",
+	stack_size = data.raw.item["iron-bacteria"].stack_size,
+    weight = data.raw.item["iron-bacteria"].weight,
+	spoil_ticks = 1 * minute,
+    spoil_result = "vanadium-oxide"
   }
-  
 })
