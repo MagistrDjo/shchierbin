@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.17
+Date: 2026-7-31
+-Alternative recipe for an advanced circuit can now be made in EMP
+-Added Japanise locale, by jacobiz.
+-No air-barrel in Maraxsis.
+---------------------------------------------------------------------------------------------------
 Version: 0.3.16
 Date: 2026-7-28
 - Fix compatibility with Maraxsis.

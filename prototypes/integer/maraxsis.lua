@@ -13,7 +13,7 @@
       {type = "fluid", name = "sea-water", amount = 1000}
     },
     energy_required = 5,
-    results = {{type="item", name="salt", amount=1},{type = "fluid", name = "water", amount = 600}},
+    results = {{type="item", name="salt", amount=1},{type = "fluid", name = "water", amount = 200}},
     allow_productivity = true
   },
  
@@ -38,6 +38,6 @@ data.raw["fluid"]["hydrogen"].auto_barrel = false
 data.raw["fluid"]["maraxsis-atmosphere"].auto_barrel = false
 
 table.insert(data.raw["technology"]["planet-discovery-maraxsis"].prerequisites, "gas-ballon")
---data.raw[item][maraxsis-atmosphere-barrel] = nil
---data.raw[recipe][maraxsis-atmosphere-barrel] = nil
---data.raw[recipe][maraxsis-atmosphere-barreling] = nil
+data.raw["item"]["maraxsis-atmosphere-barrel"].hidden = true
+data.raw["recipe"]["maraxsis-atmosphere-barrel"].hidden = true
+--data.raw["recipe"]["maraxsis-atmosphere-barreling"].hidden = true

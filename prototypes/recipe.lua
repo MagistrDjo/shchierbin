@@ -410,7 +410,7 @@ data:extend({
   },{
     type = "recipe",
     name = "fecl-advanced-circuit",
-    categories = {"crafting-with-fluid"},
+    categories = {"crafting-with-fluid","electromagnetics"},
 	auto_recycle = false,
     enabled = false,
     ingredients =
