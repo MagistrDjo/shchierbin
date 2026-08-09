@@ -14,4 +14,4 @@ if settings.startup["old-crusher"].value == true then data.raw["assembling-machi
 if settings.startup["old-crusher"].value == true then data.raw["assembling-machine"]["crusher-vanad"].module_slots = 2 end
 
 	table.insert(data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories,"ballon-recipe")
-	table.insert(data.raw["assembling-machine"]["assembling-machine-2"].crafting_categories,"ballon-recipe")
+	table.insert(data.raw["assembling-machine"]["assembling-machine-2"].crafting_categories,"ballon-recipe") 

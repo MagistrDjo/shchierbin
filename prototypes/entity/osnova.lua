@@ -36,8 +36,8 @@ data:extend({
     place_result = "accumulator-vanad",
 	stack_size = 5,
     weight = 200*kg,
-  },
-      {
+  }
+   --[[   {
     type = "item",
     name = "chemical-furnace",
 	icon = "__shchierbin__/graphics/entity/accum/accum-icon.png",
@@ -50,7 +50,7 @@ data:extend({
 	stack_size = 25,
     weight = 40*kg,
 	hidden = true,
-  }
+  }]]
 
 })
 data:extend({

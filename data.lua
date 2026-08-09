@@ -17,7 +17,7 @@ require("prototypes.shchierbin.planet")
 require("prototypes.entity.osnova")
 require("prototypes.entity.crusher")
 require("prototypes.entity.accum-van")
-require("prototypes.entity.chemical-furnace")
+--require("prototypes.entity.chemical-furnace")
 
 if mods["canal-excavator"] then require("prototypes.integer.canal") end
 
