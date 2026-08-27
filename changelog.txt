@@ -1,79 +1,86 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.19
+Date: 2026-8-27
+  Info:
+    - Deremoves gas barrels.
+    - Fix Maraxsis procression.
+    - Сhangelog is now displayed in the game.
+---------------------------------------------------------------------------------------------------
 Version: 0.3.17
 Date: 2026-7-31
   Info:
-	-Alternative recipe for an advanced circuit can now be made in EMP
-	-Added Japanise locale, by jacobiz.
-	-No air-barrel in Maraxsis.
+    - Alternative recipe for an advanced circuit can now be made in EMP
+    - Added Japanise locale, by jacobiz.
+    - No air-barrel in Maraxsis.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.16
 Date: 2026-7-28
   Info:
-	- Fix compatibility with Maraxsis.
+    - Fix compatibility with Maraxsis.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.15
 Date: 2026-7-28
   Info:
-	- Upgrade to Factorio 2.1.
-	- Added mini-compatibility with Cerys.
-	- New ammonia for all recipe.
-	- Add ballon with air.
-	- Recycling of artillery shells yields tungsten, not vanadium steel.
+    - Upgrade to Factorio 2.1.
+    - Added mini-compatibility with Cerys.
+    - New ammonia for all recipe.
+    - Add ballon with air.
+    - Recycling of artillery shells yields tungsten, not vanadium steel.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.14
 Date: 2026-5-11
   Info:
-	- Fixing compatibility with Canal-excavator.
-	- Update carbon-ore texture.
-	- Vanadium crusher now have productivity bonus (40%).
-	- Recipe gas ballons now are not displayed in the inventory.
+    - Fixing compatibility with Canal-excavator.
+    - Update carbon-ore texture.
+    - Vanadium crusher now have productivity bonus (40%).
+    - Recipe gas ballons now are not displayed in the inventory.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.13
 Date: 2025-12-25
   Info:
-	- Fixing compatibility with Maraxsis.
-	- Minor fixes.
+    - Fixing compatibility with Maraxsis.
+    - Minor fixes.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.12 
 Date: 2025-12-17
   Info:
-	- Added compatibility with Canal-excavator and Bio Industries 2.
-	- Update english locale.
+    - Added compatibility with Canal-excavator and Bio Industries 2.
+    - Update english locale.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.1
 Date: 2025-10-17
   Info:
-	- Replacing coal with carbon-ore.
-	- Minor bug fixes.
-	- Update russian locale.
+    - Replacing coal with carbon-ore.
+    - Minor bug fixes.
+    - Update russian locale.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.4
 Date: 2025-09-17
   Info:
-	- Update recipe vanadium catalyst, now plastic-bar is needed instead of steel-plate.
-	- Added recipes for sulfur, solid and rocket fuel
+    - Update recipe vanadium catalyst, now plastic-bar is needed instead of steel-plate.
+    - Added recipes for sulfur, solid and rocket fuel
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.3
 Date: 2025-08-23
   Info:
-	- Small fixes bugs.
+    - Small fixes bugs.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.2
 Date: 2025-08-21
   Info:
-	- Update locale and crusher module. 
+    - Update locale and crusher module.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.1
 Date: 2025-08-20
   Info:
-	- Add natural gas, sulfur gases and chloroplastic, edit recipe vanadium sciencee pack. 
+    - Add natural gas, sulfur gases and chloroplastic, edit recipe vanadium sciencee pack. 
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.5
 Date: 2025-08-18
   Info:
-	- Add compatibility paht with Maraxsis, Muluna and Corrundum
+    - Add compatibility paht with Maraxsis, Muluna and Corrundum
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.3
 Date: 2025-08-18
   Info:
-	- Minor bug fixes.
+    - Minor bug fixes.
