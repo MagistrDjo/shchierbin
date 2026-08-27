@@ -23,5 +23,10 @@ data:extend({
 		name = "old-crusher",
 		setting_type = "startup",
     default_value = false,
+	},{
+		type = "bool-setting",
+		name = "delete-gas-barrel",
+		setting_type = "startup",
+    default_value = false,
 	}
 })

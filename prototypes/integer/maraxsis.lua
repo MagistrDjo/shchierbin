@@ -32,7 +32,7 @@
         recipe = "chlorine"
       },
     }
-
+if settings.startup["delete-gas-barrel"].value == true then
 data.raw["fluid"]["oxygen"].auto_barrel = false
 data.raw["fluid"]["hydrogen"].auto_barrel = false
 data.raw["fluid"]["maraxsis-atmosphere"].auto_barrel = false
@@ -41,3 +41,4 @@ table.insert(data.raw["technology"]["planet-discovery-maraxsis"].prerequisites, 
 data.raw["item"]["maraxsis-atmosphere-barrel"].hidden = true
 data.raw["recipe"]["maraxsis-atmosphere-barrel"].hidden = true
 --data.raw["recipe"]["maraxsis-atmosphere-barreling"].hidden = true
+end

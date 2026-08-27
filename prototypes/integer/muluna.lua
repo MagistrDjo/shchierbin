@@ -49,6 +49,8 @@ data.raw["recipe"]["ammonia-syntes"].ingredients ={{type = "fluid", name = "nitr
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+if settings.startup["delete-gas-barrel"].value == true then
 data.raw["fluid"]["oxygen"].auto_barrel = false
 data.raw["fluid"]["hydrogen"].auto_barrel = false
 data.raw["fluid"]["carbon-dioxide"].auto_barrel = false
+end

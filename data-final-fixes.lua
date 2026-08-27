@@ -15,3 +15,4 @@ if settings.startup["old-crusher"].value == true then data.raw["assembling-machi
 
 	table.insert(data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories,"ballon-recipe")
 	table.insert(data.raw["assembling-machine"]["assembling-machine-2"].crafting_categories,"ballon-recipe") 
+	table.insert(data.raw["assembling-machine"]["chemical-plant"].crafting_categories,"ballon-recipe") 
