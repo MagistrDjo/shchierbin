@@ -4,7 +4,7 @@ data:extend({
   type = "ambient-sound",
   name = "sibiriada",
   track_type = "hero-track",
-  planet = "shchierbin",
+  planets = {"shchierbin"},
   sound =
   {
     filename = "__shchierbin__/locale/sibiriada.ogg",
