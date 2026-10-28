@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.20
+Date: 2026-10-28
+  Changes:
+    - Added a shadow to the planet discovery technology icon, matching vanilla planet discovery icons.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.3.19
 Date: 2026-8-27
   Info:

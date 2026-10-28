@@ -3,8 +3,7 @@ data:extend({
  {
     type = "technology",
     name = "planet-discovery-shchierbin",
-    icon = "__shchierbin__/graphics/icon/shchierbin.png",
-    icon_size = 512,
+    icons = PlanetsLib.technology_icon_planet("__shchierbin__/graphics/icon/shchierbin.png", 512, 0.86),
     essential = true,
     effects =
     {
